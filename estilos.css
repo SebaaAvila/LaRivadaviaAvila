@@ -7,49 +7,34 @@
     font-family: "Open Sans", sans-serif;
 }
 
-header{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 25px;
-    background-color: #FFFBDA;
-    color: #FFFBFA;
+.navbar{
+    background-color: #FFBF78;
 }
 
-.logo a{
-    font-size: 30px;
-    text-decoration: none;
-    color: #FFFBFA;
-    text-shadow: 0 0 9px #595959;
+.navbar-brand{
     font-family: "Playwrite CU", cursive;
+    color:#ED9455;
+    text-shadow: 0 0 5px #FFEC9E;
+    font-size: 25px;
+}
+
+.container-fluid{
+    background-color: #FFBF78;
+}
+
+.nav-link{
+    background-color: #FFEC9E;
+    color: #ED9455;
+    margin: 0px 10px;
+    border: solid #ED9455;
+    border-radius: 7px;
+    text-align: center;
+    transition: 1s;
+}
+
+.nav-link:hover{
     background-color: #ED9455;
-    padding: 10px 25px;
-    border-radius: 15px;
-}
-
-.logo a:hover{
-    color: #FFEC9E;
-}
-
-.nav{
-    display: inline-block;
-    list-style: none;
-    font-size: 20px;
-    padding: 10px;
-    color: #FFFBFA;
-}
-
-.nav a{
-    text-decoration: none;
-    color: #FFFBFA;
-    text-shadow: 0 0 9px #595959;
-    background-color: #ED9455;
-    padding: 10px 20px;
-    border-radius: 12px;
-}
-
-.nav a:hover{
-    color: #FFEC9E;
+    transform: scale(1.2);
 }
 
 .bcg1{
@@ -57,7 +42,7 @@ header{
     justify-content: center;
     align-items: center;
     background-image: url(./multimedia/vintage-1557993_1280.jpg);
-    height: 400px;
+    height: auto;
     width: 100%;
 }
 
@@ -66,7 +51,7 @@ header{
     width: 70%;
     background-color: rgba(255, 192, 120, 0.65);
     padding: 15px;
-    margin: 15px;
+    margin: 25px 0px;
     border: solid #ED9455;
     border-radius: 10px;
 }
@@ -115,16 +100,93 @@ span{
 }
 
 h2{
-    font-size: 30px;
+    font-size: 36px;
     text-decoration: underline #000;
     font-style: italic;
-    padding: 30px;
+    padding: 15px;
     background-color: rgba(255, 192, 120, 0.65);
     width: 30%;
     text-align: center;
     margin: 30px auto;
     border-radius: 10px;
     border: solid #ED9455;
+}
+
+.sacar-margin{
+    margin-bottom: 0px;
+}
+
+.bcg4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFEC9E;
+    padding-top: 18px;
+}
+
+.galeria{
+    background-color: #FFEC9E;
+    width: 100%;
+    padding: 18px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 230px);
+    grid-gap: 15px;
+}
+
+.img{
+    border: solid #ED9455;
+    border-radius: 7px;
+    background-position: center;
+    background-size: cover;
+}
+
+.img1{
+    background-image: url(./multimedia/img/img1.jpg);
+}
+
+.img2{
+    background-image: url(./multimedia/img/img2.jpg);
+}
+
+.img3{
+    background-image: url(./multimedia/img/img3.jpg);
+}
+
+.img4{
+    background-image: url(./multimedia/img/img4.jpg);
+}
+
+.img5{
+    background-image: url(./multimedia/img/img5.jpg);
+}
+
+.img6{
+    background-image: url(./multimedia/img/img6.jpg);
+}
+
+.img7{
+    background-image: url(./multimedia/img/img7.jpg);
+}
+
+.img8{
+    background-image: url(./multimedia/img/img8.jpg);
+}
+
+.img9{
+    background-image: url(./multimedia/img/img9.jpg);
+}
+
+.img10{
+    background-image: url(./multimedia/img/img10.jpg);
+}
+
+.img11{
+    background-image: url(./multimedia/img/img11.jpg);
+}
+
+.img12{
+    background-image: url(./multimedia/img/img12.jpg);
 }
 
 video{
@@ -144,6 +206,8 @@ video{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 .contacto{
@@ -156,7 +220,7 @@ video{
 }
 
 footer{
-    height: 130px;
+    height: 140px;
     width: 100%;
     background-color: #FFFBDA;
     text-align: center;
@@ -164,9 +228,13 @@ footer{
     font-weight: bold;
 }
 
+footer p{
+    margin: 0;
+}
+
 .redes{
-    padding: 10px;
     letter-spacing: 10px;
+    border-top: solid 3px #ED9455;
 }
 
 .redes a{
@@ -184,3 +252,141 @@ footer{
     background-color: #ED9455;
     border-radius: 50%;
 }
+
+/* Comienza media queries */
+
+@media only screen and (max-width: 1439px){
+    .galeria{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 230px);
+    }
+    .call{
+        width: 75%;
+    }
+    .h1{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 24px;
+    }
+    h2{
+        font-size: 30px;
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 1320px){
+    .bcg3{
+        height: 200px;
+    }
+    .espacio{
+        flex-wrap: wrap;
+        height: 200px;
+    }
+    #contacto4{
+    width: 80%;
+    text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .bcg3{
+        height: 260px;
+    }
+    .espacio{
+        height: 260px;
+    }
+    #contacto1{
+        width: 35%;
+        text-align: center;
+    }
+    #contacto2{
+        width: 35%;
+        text-align: center;
+    }
+    #contacto3{
+        width: 80%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .galeria{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 230px);
+    }
+    .call{
+        width: 87%;
+    }
+    .h1{
+        font-size: 22px;
+    }
+    h3{
+        font-size: 17px;
+    }
+    h2{
+        font-size: 22px;
+        width: 65%;
+    }
+    .bcg3{
+        height: auto;
+    }
+    .espacio{
+        height: 280px;
+    }
+    #contacto1{
+        width: 80%;
+        text-align: center;
+    }
+    #contacto2{
+        width: 80%;
+        text-align: center;
+    }
+    .contacto{
+        padding: 10px;
+        font-size: 14px;
+    }
+    footer p{
+        font-size: 14px;
+    }
+    .redes a{
+        font-size: 42px;
+    }
+}
+
+@media only screen and (max-width: 479px){
+    .galeria{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(12, 230px);
+    }
+    .call{
+        width: 90%;
+    }
+    .h1{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    h2{
+        font-size: 20px;
+        width: 65%;
+    }
+    .contacto{
+        font-size: 12px;
+    }
+    footer p{
+        font-size: 12px;
+    }
+    .redes a{
+        font-size: 34px;
+    }
+}
+
+@media only screen and (max-width: 328px){
+    .redes{
+        height: 30px;
+    }
+}
+
+/* Termina media queries */
